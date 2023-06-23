@@ -11,12 +11,12 @@ Final Perancangan dan Analisi Algoritma 2
 
 Berdasarkan data yang diberikan untuk buble sort, kasus diatas adalah average case, kita dapat menganalisis performa Bubble Sort sebagai berikut:
 
-1. **Best Case**: Skenario kasus terbaik (best case) untuk Bubble Sort terjadi ketika list input sudah terurut. Pada kasus ini, Bubble Sort akan memiliki kompleksitas waktu O(n) karena tidak perlu dilakukan pertukaran. Namun, list input yang diberikan tidak terurut secara awal, sehingga tidak mewakili kasus terbaik.
+1. **Best Case**: Skenario kasus terbaik (best case) untuk Bubble Sort terjadi ketika list input sudah terurut. Pada kasus ini, Bubble Sort akan memiliki kompleksitas waktu O(n) karena tidak perlu dilakukan pertukaran. Namun, Data yang yang diberikan pada kasus diatas tidak terurut secara awal, sehingga tidak mewakili kasus terbaik.
 
-2. **Worst Case**: Skenario kasus terburuk (worst case) untuk Bubble Sort terjadi ketika list input terurut secara terbalik. Pada kasus ini, Bubble Sort akan melakukan jumlah perbandingan dan pertukaran maksimum, menghasilkan kompleksitas waktu O(n^2). Karena list input yang diberikan tidak terurut secara terbalik, maka tidak mewakili kasus terburuk.
+2. **Worst Case**: Skenario kasus terburuk (worst case) untuk Bubble Sort terjadi ketika list input terurut secara terbalik. Pada kasus ini, Bubble Sort akan melakukan jumlah perbandingan dan pertukaran maksimum, menghasilkan kompleksitas waktu O(n^2). Karena pada kasus diatas data yang diberikan tidak terurut secara terbalik, maka program diatas tidak mewakili kasus terburuk.
 
 3. **Average Case**: Skenario kasus rata-rata (Average Case ) untuk Bubble Sort terjadi ketika list input diurutkan secara acak. Pada kasus ini
-, Bubble Sort akan membutuhkan beberapa iterasi dan perbandingan untuk mengurutkan list. Kompleksitas waktu Bubble Sort pada Average O(n^2). **List input yang diberikan mewakili skenario kasus rata-rata (Average Case)** karena tidak terurut secara awal dan tidak terurut secara terbalik.
+, Bubble Sort akan membutuhkan beberapa iterasi dan perbandingan untuk mengurutkan list. Kompleksitas waktu Bubble Sort pada Average O(n^2). **pada kasus diatasList input yang diberikan mewakili skenario kasus rata-rata (Average Case)** karena tidak terurut secara awal dan tidak terurut secara terbalik.
 
 Dengan demikian, kita dapat mengatakan bahwa hasil pengurutan dengan Bubble Sort ini mewakili **kasus rata-rata (average case)**. Meskipun kompleksitas waktu Bubble Sort dalam kasus rata-rata juga O(n^2), waktu eksekusi yang Anda berikan menunjukkan bahwa jumlah iterasi yang dilakukan tidak terlalu besar dan kinerjanya relatif baik.
 

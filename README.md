@@ -38,6 +38,7 @@ Jika data awalnya sudah terurut, maka Insertion Sort akan memiliki kinerja terba
    jika data awalnya terurut secara terbalik secara ekstrim, maka Insertion Sort akan mencapai kasus terburuk (worst case) dengan kompleksitas waktu O(n^2). namun data yang diberikan tidak terurut secara terbalik secara ekstrim,seingga bukan merupakan worst case.
 
 
+
 <H1>Traveling Salesman Problem & Djikstra Algorithm</H1>
 <H2>Analisis Algoritma TSP</H2>
 

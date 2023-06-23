@@ -2,7 +2,7 @@
 Final Perancangan dan Analisi Algoritma 2
 <H1>Buble sort & insertion sort</H1>
 
-#**Analisis Algoritma Insertion Sort**
+<H2>Analisis Algoritma Insertion Sort</H2>
 - **Sebelum pengurutan**: [12, 99, 62, 15, 20, 95, 39, 48, 3, 24, 8, 43, 74, 19, 97, 33, 49, 68, 55, 33, 90, 90, 7, 26, 85, 46, 39, 40, 9, 36, 60, 64, 89, 31, 25, 71, 21, 23, 63, 84, 32, 5, 3, 44, 21, 10, 21, 17, 50, 2, 36, 53, 79, 54, 19, 88, 1, 32, 31, 15, 6, 3, 1, 40, 22, 43, 18, 1, 77, 9, 59, 40, 7, 41, 81]
 
 - **Setelah pengurutan**: [1, 1, 1, 2, 3, 3, 3, 5, 6, 7, 7, 8, 9, 9, 10, 12, 15, 15, 17, 18, 19, 19, 20, 21, 21, 21, 22, 23, 24, 25, 26, 31, 31, 32, 32, 33, 33, 36, 36, 39, 39, 40, 40, 40, 41, 43, 43, 44, 46, 48, 49, 50, 53, 54, 55, 59, 60, 62, 63, 64, 68, 71, 74, 77, 79, 81, 84, 85, 88, 89, 90, 90, 95, 97, 99]
@@ -20,7 +20,7 @@ Berdasarkan data yang diberikan untuk buble sort, kasus diatas adalah average ca
 
 Dengan demikian, kita dapat mengatakan bahwa hasil pengurutan dengan Bubble Sort ini mewakili **kasus rata-rata (average case)**. Meskipun kompleksitas waktu Bubble Sort dalam kasus rata-rata juga O(n^2), waktu eksekusi yang Anda berikan menunjukkan bahwa jumlah iterasi yang dilakukan tidak terlalu besar dan kinerjanya relatif baik.
 
-# Analisis Algoritma Insertion Sort
+ <H2>Analisis Algoritma Insertion Sort</H2>
 
 Dalam kasus ini, digunakan algoritma pengurutan Insertion Sort untuk mengurutkan data awal yang tidak terurut. Berikut adalah hasil pengurutan menggunakan algoritma Insertion Sort:
 
@@ -38,7 +38,7 @@ Jika data awalnya sudah terurut, maka Insertion Sort akan memiliki kinerja terba
 
 
 <H1>Traveling Salesman Problem & Djikstra Algorithm</H1>
-# Analisis Algoritma TSP
+<H2>Analisis Algoritma TSP</H2>
 
 Dalam program ini, kita menerapkan algoritma TSP (Traveling Salesman Problem) untuk mencari jalur terpendek yang melintasi semua vertex dalam sebuah graph. Untuk melakukan analisis kompleksitas waktu pada algoritma TSP, kita dapat mempertimbangkan tiga kasus: worst case, best case, dan average case.
 
@@ -54,7 +54,7 @@ Pada kasus rata-rata, kompleksitas waktu algoritma TSP dapat bervariasi tergantu
 Kasus tersebut dapat digolongkan sebagai **average case**, karena kompleksitas waktu algoritma TSP pada kasus tersebut akan bervariasi tergantung pada jumlah vertex yang harus diuji. Dalam hal ini, kompleksitas waktu akan dipengaruhi oleh jumlah permutasi yang mungkin, yang pada kasus ini adalah (7-1)! = 6!, yaitu 720 permutasi.
 Pada kasus yang diberikan, output program menunjukkan waktu komputasi sekitar 1.478879 detik untuk menyelesaikan algoritma TSP pada graph dengan 7 vertex. Namun, penting untuk dicatat bahwa waktu komputasi dapat bervariasi tergantung pada sistem komputer dan lingkungan eksekusi program.
 
-#Analisis Algoritma Djikstra
+<H2>Analisis Algoritma Djikstra</H2>
 **1. Worst case:**
 Worst case pada algoritma Dijkstra terjadi ketika semua node terhubung satu sama lain dengan jarak yang sama. Dalam kasus ini, algoritma Dijkstra akan memeriksa semua kemungkinan jalur, sehingga kompleksitas waktu akan mencapai O(V^2), di mana V adalah jumlah node dalam graf. Dalam contoh kasus Anda, kompleksitas waktu terburuk dapat terjadi ketika setiap node terhubung langsung dengan node lainnya. Dalam hal ini, terdapat 7 node, sehingga kompleksitas waktu adalah O(7^2) = O(49).
 

@@ -1,6 +1,6 @@
 # Final-PAA2
 Final Perancangan dan Analisi Algoritma 2
-
+<H1>Buble sort & insertion sort</H1>
 # Analisis Bubble Sort
 
 - **Sebelum pengurutan**: [12, 99, 62, 15, 20, 95, 39, 48, 3, 24, 8, 43, 74, 19, 97, 33, 49, 68, 55, 33, 90, 90, 7, 26, 85, 46, 39, 40, 9, 36, 60, 64, 89, 31, 25, 71, 21, 23, 63, 84, 32, 5, 3, 44, 21, 10, 21, 17, 50, 2, 36, 53, 79, 54, 19, 88, 1, 32, 31, 15, 6, 3, 1, 40, 22, 43, 18, 1, 77, 9, 59, 40, 7, 41, 81]
@@ -36,7 +36,9 @@ Jika data awalnya sudah terurut, maka Insertion Sort akan memiliki kinerja terba
 3. **worst case**
    jika data awalnya terurut secara terbalik secara ekstrim, maka Insertion Sort akan mencapai kasus terburuk (worst case) dengan kompleksitas waktu O(n^2). namun data yang diberikan tidak terurut secara terbalik secara ekstrim,seingga bukan merupakan worst case.
 
-# Analisis Kompleksitas Waktu Algoritma TSP
+
+<H1>Traveling Salesman Problem & Djikstra Algorithm</H1>
+# Analisis Algoritma TSP
 
 Dalam program ini, kita menerapkan algoritma TSP (Traveling Salesman Problem) untuk mencari jalur terpendek yang melintasi semua vertex dalam sebuah graph. Untuk melakukan analisis kompleksitas waktu pada algoritma TSP, kita dapat mempertimbangkan tiga kasus: worst case, best case, dan average case.
 
@@ -51,3 +53,15 @@ Pada kasus rata-rata, kompleksitas waktu algoritma TSP dapat bervariasi tergantu
 
 Kasus tersebut dapat digolongkan sebagai **average case**, karena kompleksitas waktu algoritma TSP pada kasus tersebut akan bervariasi tergantung pada jumlah vertex yang harus diuji. Dalam hal ini, kompleksitas waktu akan dipengaruhi oleh jumlah permutasi yang mungkin, yang pada kasus ini adalah (7-1)! = 6!, yaitu 720 permutasi.
 Pada kasus yang diberikan, output program menunjukkan waktu komputasi sekitar 1.478879 detik untuk menyelesaikan algoritma TSP pada graph dengan 7 vertex. Namun, penting untuk dicatat bahwa waktu komputasi dapat bervariasi tergantung pada sistem komputer dan lingkungan eksekusi program.
+
+#Analisis Algoritma Djikstra
+**1. Worst case:**
+Worst case pada algoritma Dijkstra terjadi ketika semua node terhubung satu sama lain dengan jarak yang sama. Dalam kasus ini, algoritma Dijkstra akan memeriksa semua kemungkinan jalur, sehingga kompleksitas waktu akan mencapai O(V^2), di mana V adalah jumlah node dalam graf. Dalam contoh kasus Anda, kompleksitas waktu terburuk dapat terjadi ketika setiap node terhubung langsung dengan node lainnya. Dalam hal ini, terdapat 7 node, sehingga kompleksitas waktu adalah O(7^2) = O(49).
+
+**2. Best case:**
+Best case pada algoritma Dijkstra terjadi ketika node tujuan dapat dicapai langsung dari node awal tanpa harus melalui node lainnya. Dalam kasus ini, algoritma Dijkstra akan memeriksa setiap node sekali, sehingga kompleksitas waktu adalah O(V), di mana V adalah jumlah node dalam graf. Dalam contoh kasus Anda, jika misalnya Anda mencari shortest path dari node A ke node G, yang dapat dicapai langsung, kompleksitas waktu terbaiknya adalah O(7).
+
+**3. Average case:**
+Rata-rata kompleksitas waktu pada algoritma Dijkstra dapat bervariasi tergantung pada struktur graf dan jarak antara node-node. Dalam kasus umum, kompleksitas waktu algoritma Dijkstra adalah O(V^2), di mana V adalah jumlah node dalam graf. Namun, dalam beberapa implementasi yang dioptimalkan, seperti menggunakan antrian prioritas, kompleksitas waktu dapat ditingkatkan menjadi O((V + E) log V), di mana E adalah jumlah tepi dalam graf. Dalam contoh kasus Anda, dengan 7 node, kompleksitas waktu rata-rata berkisar antara O(7^2) hingga O((7 + 14) log 7).
+
+Jadi, berdasarkan analisis ini, algoritma Dijkstra pada contoh kasus Anda termasuk dalam kasus worst case (terburuk) dan average case (rata-rata) sesuai dengan kompleksitas waktu yang telah dijelaskan sebelumnya.

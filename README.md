@@ -55,6 +55,7 @@ Kasus tersebut dapat digolongkan sebagai **average case**, karena kompleksitas w
 Pada kasus yang diberikan, output program menunjukkan waktu komputasi sekitar 1.478879 detik untuk menyelesaikan algoritma TSP pada graph dengan 7 vertex. Namun, penting untuk dicatat bahwa waktu komputasi dapat bervariasi tergantung pada sistem komputer dan lingkungan eksekusi program.
 
 <H2>Analisis Algoritma Djikstra</H2>
+
 **1. Worst case:**
 Worst case pada algoritma Dijkstra terjadi ketika semua node terhubung satu sama lain dengan jarak yang sama. Dalam kasus ini, algoritma Dijkstra akan memeriksa semua kemungkinan jalur, sehingga kompleksitas waktu akan mencapai O(V^2), di mana V adalah jumlah node dalam graf. Dalam contoh kasus Anda, kompleksitas waktu terburuk dapat terjadi ketika setiap node terhubung langsung dengan node lainnya. Dalam hal ini, terdapat 7 node, sehingga kompleksitas waktu adalah O(7^2) = O(49).
 

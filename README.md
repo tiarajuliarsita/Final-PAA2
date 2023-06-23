@@ -35,3 +35,17 @@ Dalam analisis kasus ini, dapat disimpulkan bahwa pengurutan dengan menggunakan 
 Jika data awalnya sudah terurut, maka Insertion Sort akan memiliki kinerja terbaik dengan kompleksitas waktu O(n). namun datanya awal nya tidak  terurut sehingga kasus tersebut bukan merupakan best case.
 3. **worst case**
    jika data awalnya terurut secara terbalik secara ekstrim, maka Insertion Sort akan mencapai kasus terburuk (worst case) dengan kompleksitas waktu O(n^2). namun data yang diberikan tidak terurut secara terbalik secara ekstrim,seingga bukan merupakan worst case.
+
+# Analisis Kompleksitas Waktu Algoritma TSP
+
+Dalam program ini, kita menerapkan algoritma TSP (Traveling Salesman Problem) untuk mencari jalur terpendek yang melintasi semua vertex dalam sebuah graph. Untuk melakukan analisis kompleksitas waktu pada algoritma TSP, kita dapat mempertimbangkan tiga kasus: worst case, best case, dan average case.
+
+**a. Worst Case:**
+Worst case pada algoritma TSP terjadi ketika semua permutasi jalur mungkin harus diuji untuk mencari jalur terpendek. Dalam kasus ini, kompleksitas waktu akan bergantung pada jumlah vertex pada graph. Jumlah permutasi yang mungkin untuk N vertex adalah (N-1)!. Oleh karena itu, kompleksitas waktu pada worst case adalah O((N-1)!).
+**b. Best Case:**
+Best case pada algoritma TSP terjadi ketika ada jarak langsung dari satu vertex ke semua vertex lainnya. Dalam hal ini, hanya satu jalur yang perlu diuji dan tidak perlu menghitung permutasi jalur. Sehingga kompleksitas waktu pada best case adalah O(1).
+**c. Average Case:**
+Pada kasus rata-rata, kompleksitas waktu algoritma TSP dapat bervariasi tergantung pada karakteristik graph dan pendekatan yang digunakan. Dalam program ini, kita menggunakan pendekatan brute force dengan menguji semua permutasi jalur yang mungkin. Jumlah permutasi yang diuji untuk N vertex adalah (N-1)!. Kompleksitas waktu rata-rata pada pendekatan ini juga dapat dianggap sebagai O((N-1)!).
+
+Kasus tersebut dapat digolongkan sebagai average case, karena kompleksitas waktu algoritma TSP pada kasus tersebut akan bervariasi tergantung pada jumlah vertex yang harus diuji. Dalam hal ini, kompleksitas waktu akan dipengaruhi oleh jumlah permutasi yang mungkin, yang pada kasus ini adalah (7-1)! = 6!, yaitu 720 permutasi.
+Pada kasus yang diberikan, output program menunjukkan waktu komputasi sekitar 1.478879 detik untuk menyelesaikan algoritma TSP pada graph dengan 7 vertex. Namun, penting untuk dicatat bahwa waktu komputasi dapat bervariasi tergantung pada sistem komputer dan lingkungan eksekusi program.

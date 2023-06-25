@@ -1,4 +1,8 @@
 # Final-PAA2
+<H3>Nama : Tiara Juli Arista</H3>
+<H3>Nim  : F55121053</H3>
+<H3>Kelas: B</H3>
+
 Final Perancangan dan Analisi Algoritma 2
 <H1>Buble sort & insertion sort</H1>
 
